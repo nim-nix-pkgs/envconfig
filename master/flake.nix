@@ -11,6 +11,7 @@
   inputs.src-envconfig-master.ref   = "refs/heads/master";
   inputs.src-envconfig-master.owner = "jiro4989";
   inputs.src-envconfig-master.repo  = "envconfig";
+  inputs.src-envconfig-master.dir   = "";
   inputs.src-envconfig-master.type  = "github";
   
   inputs."regex".owner = "nim-nix-pkgs";

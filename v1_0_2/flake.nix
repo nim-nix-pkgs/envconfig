@@ -11,6 +11,7 @@
   inputs.src-envconfig-v1_0_2.ref   = "refs/tags/v1.0.2";
   inputs.src-envconfig-v1_0_2.owner = "jiro4989";
   inputs.src-envconfig-v1_0_2.repo  = "envconfig";
+  inputs.src-envconfig-v1_0_2.dir   = "";
   inputs.src-envconfig-v1_0_2.type  = "github";
   
   inputs."regex".owner = "nim-nix-pkgs";

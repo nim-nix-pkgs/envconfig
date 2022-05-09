@@ -7,7 +7,7 @@
   "license": "MIT",
   "web": "https://github.com/jiro4989/envconfig",
   "refs": [
-    "fatal: unable to access 'https://github.com/jiro4989/envconfig/': Could not resolve host: github.com",
+    "fatal: unable to access 'https://github.com/jiro4989/envconfig/': Failed to connect to github.com port 443 after 136513 ms: Network is unreachable",
     ""
   ],
   "heads": []

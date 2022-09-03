@@ -1,0 +1,32 @@
+name: build
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - '**.nim'
+      - '.github/workflows/*'
+  pull_request:
+    paths:
+      - '**.nim'
+      - '.github/workflows/*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        nim-version:
+          - '1.0.0'
+          - '1.0.x'
+          - '1.2.x'
+          - '1.4.x'
+          - 'stable'
+    steps:
+      - uses: actions/checkout@v2
+      - uses: jiro4989/setup-nim-action@v1
+        with:
+          nim-version: ${{ matrix.nim-version }}
+      - run: nimble install -Y
+      - run: testament pattern 'tests/*.nim'
